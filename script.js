@@ -95,6 +95,7 @@ jQuery(document).ready(function ($) {
     $.getJSON("https://covid19.mathdro.id/api/countries").done(function (jsonCountry) {
         var table = document.getElementById('welt').getElementsByTagName('tbody')[0];  // table reference
         var countries = jsonCountry.countries;
+        var count = countries.length;
 
         $.each(countries, function() {
             var country = this.name;
@@ -118,7 +119,10 @@ jQuery(document).ready(function ($) {
                 confirmed.setAttribute('data-sort-value', json.confirmed.value);
                 deaths.setAttribute('data-sort-value', json.deaths.value);
                 recovered.setAttribute('data-sort-value', json.recovered.value);
-                $('#welt').tablesort().data('tablesort').sort($("th.default-sort"), 'desc');
+
+                if(--count < 5) { // have a little buffer if some countries' json are invalid
+                    $('#welt').tablesort().data('tablesort').sort($("th.default-sort"), 'desc');
+                }
             });
         });
 
