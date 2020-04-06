@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de" data-theme='light'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coronavirus | Infos und Statistiken</title>
+    
+    <!-- import stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!--import google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--import jquery-->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- import table sort library -->
+    <script defer src="jquery.tablesort.js"></script>
+    <!-- import javascript file -->
+    <script defer src="./script.js" defer></script>
+    <!--Load support script for older browsers that do not support HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+  </head>  
+  <body>
+    <!--NAVIGATION-->
+    <nav class="navigationbar">
+        <div class="navtoggle">
+            <i id="navtoggle" class="material-icons" style="font-size: 18px; color: #fff; cursor: pointer;">menu</i>
+        </div>
+        <div id="navcontents">
+            <ul>
+                <li>
+                    <a class="topicname" href="#">Coronavirus</a>
+                </li>
+                <li>
+                    <a href="#herkunft">Herkunft</a>
+                </li>
+                <li>
+                    <a href="#uebertragung">Übertragung</a>
+                </li>
+                <li>
+                    <a href="#schutzmassnahmen">Schutzmaßnahmen</a>
+                </li>
+                <li>
+                    <a href="#statistiken">Aktuelle Statistiken</a>
+                </li>
+                <li title="Corona Live Karte und Daten" style="float: right;">
+                    <a href="https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/" target="_blank"><i class="material-icons" style="font-size: 18px; color: #fff;">public</i></a>
+                </li>
+                <li title="Dunkler Modus" style="float: right;">
+                    <a id="theme-toggle" style="cursor: pointer;"><i class="material-icons" style="font-size: 18px; color: #fff;">brightness_4</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--BackgroundImage-->
+    <div class="titleimage">
+        <div class="titlecontainer">
+            <p class="title_text">Coronavirus</p>
+            <p class="title_subtext">Mehr als 1 Millionen Infizierte weltweit, geschlossene Grenzen, Schulen und Kitas.<br>Wie gefährlich ist das Coronavirus?</p>
+        </div>
+    </div>
+    <!--CONTENT-->
+    <main>
+        <div class="content">
+            <section>
+                <a id="herkunft" class="anchor"></a>
+                <h1>Herkunft</h1>
+                <p>Die Übertragung des Coronavirus passierte – wie bei anderen Coronaviren – von Tier zu Mensch. Nach derzeitigen wissenschaftlichen Erkenntnissen hat das Virus seinen Ursprung im Huanan-Seafood-Großhandelsmarkt, einem Markt für Meeresfrüchte in Wuhan, und wurde offenbar von Fledermäusen auf Schlangen und dann auf den Menschen übertragen, wie <a href="https://www.meduniwien.ac.at/hp/tropenmedizin/" target="_blank">Ursula Wiedermann-Schmidt</a>, die Leiterin der Infektiologie an der MedUni Wien, erklärte. Auf diesem Markt wird mit lebenden und frisch geschlachteten Tieren gehandelt, auch Schlangen werden in China gegessen. Der Markt wurde bereits Anfang des Jahres von den chinesischen Behörden geschlossen. Die genaue Herkunft des Virus ist aber noch unklar. Eine Übertragung von Mensch zu Mensch ist laut WHO nachgewiesen. Inzwischen gibt es laut der Infektiologin vermehrt Anzeichen, dass eine Ansteckung auch während der Inkubationszeit (meistens fünf Tage, bis zu 14 Tagen, in Einzelfällen länger) möglich ist.</p>
+            </section>
+
+            <section>
+                <a id="uebertragung" class="anchor"></a>
+                <h1>Übertragung</h1>
+                <p>Wissenschaftler und Gesundheitsbehörden gehen davon aus, dass Coronaviren vor allem über eine <b>Tröpfchen- und Kontaktinfektion</b> weitergegeben werden – also durch direktes Anhusten oder Körperkontakt mit einer kranken Person. Eine reine Übertragung über die Luft wurde bisher nicht nachgewiesen. Im Gegensatz zur bekannten SARS-Infektion gelingt SARS-CoV-2 laut dem Virologen Christian Drosten von der Charité Berlin “anscheinend doch eine <b>aktive Vermehrung im Rachenbereich</b>, das ist ein großer Unterschied zu SARS.” Fazit: Eine Ansteckung geht wesentlich schneller.</p>
+
+                <h3>Was sind die Symptome?</h3>
+                <p>Das Coronavirus verursacht offenbar ganz unterschiedlich starke Beschwerden: Von einer eher harmlosen Erkältung und einem Infekt der oberen Luftwege bis hin zu den <b>typischen Anzeichen einer viralen Lungenentzündung</b> – Fieber mit Husten, Kurzatmigkeit und Atemschwierigkeiten, Muskelschmerzen und Müdigkeit. Seltener sind Kopfschmerzen oder Auswurf.Gerade die eher harmlosen Symptome werden <b>schneller mit einer üblichen Erkältung oder Grippe verwechselt</b> und die Unterscheidung ist nicht immer einfach, auch weil unterschiedliche Patienten von unterschiedlichen Symptomen berichten.</p>
+                <img id="symptomgrafik" alt="Symptome nach Häufigkeit" src="./assets/Corona_Symptome.png">
+            
+                <h3>Ansteckung schon ohne Symptome?</h3>
+                <p>Vereinzelt wurde berichtet, dass sogar Infizierte das Virus übertragen haben, die <b>noch gar keine Symptome</b> hatten. Das ist ein wichtiger Faktor für die Bewertung, wie leicht sich eine Krankheit ausbreiten kann. Denn besonders gefährlich werden Viren, wenn sie sehr schnell von Mensch zu Mensch wandern. Das schließt allerdings nicht aus, dass es nicht in anderen Fällen zu einer Übertragung noch während der Inkubationszeit gekommen ist. Aktuell geht man von einer <b>Inkubationszeit von bis zu 14 Tagen</b> aus.</p>
+            
+                <h3>Wie lange bleibt man ansteckend?</h3>
+                <p>Natürlich kann ein Infizierter das Virus auch weiter verbreiten, wenn die Symptome aufgetreten sind. Allerdings gibt es <b>kaum Daten</b> dazu, bis zu welchem Zeitpunkt nach Erkrankungsbeginn eine solche Ansteckungsfähigkeit besteht. Vermehrungsfähige Viren wurden in einer vorläufigen Studie im Rachen bis zu vier Tage nach Symptombeginn und im Auswurf bis zu acht Tage nach Symptombeginn nachgewiesen. Bestandteile der Viren wurden in verschiedenen Studien bis zu 18 Tage nach Erkrankungsbeginn in den Atemwegen der Patienten nachgewiesen. Ob diese Viren noch vermehrungsfähig und damit ansteckend waren, ist nicht bekannt.</p>
+            </section>
+
+            <section>
+                <a id="schutzmassnahmen" class="anchor"></a>
+                <h1>Schutzmaßnahmen</h1>
+                <p>Um sich bestm&ouml;glich vor dem Coronavirus zu sch&uuml;tzen sollte man jeden Kontakt mit anderen Menschen vermeiden. Es wird emfohlen <strong>zu Hause zu bleiben</strong>.&nbsp;Kinobesuche, Partys und sonstige Veranstaltungen m&uuml;ssen leider ausfallen. Nur so kann die Ausbreitung des Coronvirus sinnvoll verlangsamt werden.</p>
+                <p>So können sie vermeiden sich mit dem Coronavirus anzustecken:</p>
+                <ul>
+                    <li><p>Regelmäßig die <b>Hände waschen</b>. Normale Seife reicht aus.</p></li>
+                    <li><p>In die <b>Armbeuge</b> niesen oder husten.</p></li>
+                    <li><p>Mindestens <b>1 bis 2 Meter Abstand</b> zu anderen Menschen.</p></li>
+                    <li><p>Anderen Menschen <b>nicht die Hand geben</b>.</p></li>
+                    <li><p>Treffen <b>vermeiden</b> und <b>zuhause bleiben</b>.</p></li>
+                    <li><p>Berühren von <b>Nase, Augen und Mund</b> vermeiden.</p></li>
+                    <li><p>Regelmäßig <b>Lüften</b>.</p></li>
+                </ul>
+            </section>
+
+            <section>
+                <a id="statistiken" class="anchor"></a>
+                <h1>Aktuelle Statistiken</h1>
+
+                <div class="statistik_parent">
+                    <div class="statistik_card">
+                        <h2>Deutschland</h2>
+                        <p id="deutschland-stand">Stand: <b>%stand</b><br>
+                        Bestätigte Infektionen insgesamt: <b>%gesamt</b></p>
+                        <div class="statistik_container">
+                            <table id="deutschland" class="statistik sortable">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50%;">Bundesland</th>
+                                        <th class="default-sort">Infizierte</th>
+                                        <th>Tode</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <p style="font-size: 0.75rem;">Quelle: <a href="https://www.tagesschau.de/inland/coronavirus-karte-deutschland-101.html" target="_blank">Tagesschau</a> | <a href="https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Fallzahlen.html" target="_blank">RKI</a></p>
+                    </div>
+
+                    <div class="statistik_card">
+                        <h2>Welt</h2>
+                        <p id="welt-stand">Stand: <b>%stand</b><br>
+                        Bestätigte Fälle: <b>%bestaetigt</b><br>
+                        Wieder gesund: <b>%gesund</b><br>
+                        Todesfälle: <b>%todesfaelle</b></p>
+                        <div class="statistik_container">
+                            <table id="welt" class="statistik sortable">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 40%;">Land</th>
+                                        <th class="default-sort">Bestätigte</th>
+                                        <th>Tode</th>
+                                        <th>Gesund</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <p style="font-size: 0.75rem;">Quelle: <a href="https://systems.jhu.edu/" target="_blank">JHU CSSE</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="quellen">
+                <i class="material-icons">info</i>
+                <a href="./quellen.html">Quellen von Bild und Text</a>
+            </div>
+
+            <div class="contact">
+                <h3 style="margin-bottom: 18px;">Kontaktformular</h3>
+                <form id="contactform" action="javascript:formSubmit();" method="post">
+
+                    <div style="margin-bottom: 10px;">
+                        <p style="line-height: 2rem;margin: 0;">Anrede</p>
+                        <input type="radio" id="herr" name="anrede" value="Herr">
+                        <label for="herr">Herr</label>
+                        <input type="radio" id="frau" name="anrede" value="Frau">
+                        <label for="frau">Frau</label>
+                        <input type="radio" id="divers" name="anrede" value="Divers">
+                        <label for="divers">Divers</label>
+                    </div>
+                    <div class="column" style="margin-right: 3px;">
+                        <label for="firstname">Vorname</label>
+                        <input type="text" id="firstname" name="vorname" placeholder="Dein Name">
+                    </div>
+                    <div class="column" style="margin-left: 3px;">
+                        <label for="lastname">Nachname</label>
+                        <input type="text" id="lastname" name="nachname" placeholder="Dein Nachname">
+                    </div>
+                    <label for="mail">E-Mail</label>
+                    <input type="email" id="mail" name="email" placeholder="Deine E-Mail-Adresse">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="nachricht" placeholder="Hinterlasse eine Nachricht"></textarea>
+                    <input type="submit" value="Absenden">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--SCROLL-UP BUTTON-->
+    <button id="scrollUp" onclick="scrollToTop()" title="Gehe zum Anfang"><i class="material-icons" style="color: #ffffff;">expand_less</i></button>
+    <!--FOOTER-->
+    <footer class="footer">
+        <p>Copyright &copy; 2020 Lars Obrath</p>
+    </footer>
+  </body>
+</html>
