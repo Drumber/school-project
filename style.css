@@ -9,7 +9,7 @@ html {
     --text-hover: #464646;
     --hover: #e2e2e2;
     --accent: rgb(216, 50, 0);
-    --accent-dark: #d33d0298;
+    --accent-dark: #a83000;
 }
 
 html[data-theme='dark'] {
@@ -71,7 +71,7 @@ p {
 a {
     text-decoration: none;
     font-weight: 510;
-    color: #d33d0298;
+    color: #a83000;
     color: var(--accent-dark);
 }
 
@@ -425,7 +425,7 @@ th.sorted.descending:after {
 }
 
 .contact input[type=submit]:hover {
-    background-color: #d33d0298;
+    background-color: #a83000;
     background-color: var(--accent-dark);
 }
 
@@ -456,7 +456,7 @@ th.sorted.descending:after {
 }
 
 #scrollUp:hover {
-    background-color: #d33d0298;
+    background-color: #a83000;
     background-color: var(--accent-dark);
 }
 
@@ -469,7 +469,7 @@ th.sorted.descending:after {
     margin-top: -50px;
     padding: 0 16px;
     line-height: 50px;
-    background: rgba(52, 58, 64);
+    background: rgb(52, 58, 64);
 }
 
 .footer p {
