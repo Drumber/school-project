@@ -98,12 +98,18 @@ ul {
     background-color: rgb(216, 50, 0);
     background-color: var(--accent);
     border: none;
+    border-radius: 4px;
     color: #ffffff;
     padding: 12px 16px;
     cursor: pointer;
     font-size: 16px;
     display: inline-flex;
     vertical-align: middle;
+}
+
+.button:hover {
+    background-color: #a83000;
+    background-color: var(--accent-dark);
 }
 
 /*===================
